@@ -14,81 +14,59 @@ padding:20px;
 
 h1{
 color:#ff0000;
-font-size:40px;
-text-shadow:0 0 15px #ff0000;
+font-size:42px;
+text-shadow:0 0 20px #ff0000;
 margin:10px 0;
 }
 
 .subtitle{
-font-size:16px;
+font-size:18px;
 margin-bottom:20px;
 }
 
 .video-box{
-max-width:380px;
+max-width:400px;
 margin:auto;
-border:1px solid #ff0000;
-border-radius:18px;
-padding:3px;
+border:2px solid #ff0000;
+border-radius:20px;
+padding:4px;
 }
 
 video{
 width:100%;
-border-radius:15px;
+border-radius:16px;
 display:block;
-}
-
-.btn{
-display:none;
-width:90%;
-max-width:340px;
-margin:15px auto;
-padding:16px;
-background:#ff0000;
-color:#fff;
-text-decoration:none;
-font-size:18px;
-font-weight:bold;
-border-radius:12px;
 }
 
 .gallery{
 display:flex;
-justify-content:center;
 gap:10px;
+justify-content:center;
 margin-top:20px;
 }
 
 .gallery img{
 width:48%;
 border-radius:12px;
-display:block;
+border:1px solid #ff0000;
 }
 
 .info{
-margin-top:20px;
+margin-top:25px;
+font-size:20px;
 line-height:2;
-font-size:18px;
 }
 </style></head><body><h1>WATCH ONLINE</h1><div class="subtitle">
 ⚡ INSTANT ACCESS • 18+ ONLY
 </div><div class="video-box">
-<video id="vid" autoplay muted playsinline controls>
-<source src="video.mp4" type="video/mp4">
+<video autoplay muted playsinline controls>
+<source src="VID_20260531_142835_165.mp4" type="video/mp4">
 </video>
-</div><a id="fullbtn" class="btn" href="#">
-🔓 UNLOCK FULL ACCESS
-</a><div class="gallery">
-<img src="foto1.jpg" alt="">
-<img src="foto2.jpg" alt="">
+</div><div class="gallery">
+<img src="IMG_20260531_195646.jpg">
+<img src="IMG_20260531_195737.jpg">
 </div><div class="info">
 <div>🔥 Instant Access</div>
 <div>🎬 HD Streaming</div>
-</div><script>
-const vid = document.getElementById("vid");
-
-vid.addEventListener("ended", function(){
-document.getElementById("fullbtn").style.display = "block";
-});
-</script></body>
+</div></body>
 </html>
