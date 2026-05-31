@@ -52,9 +52,9 @@ width:48%;
 
 .thumb img{
 width:100%;
+display:block;
 border-radius:12px;
 border:1px solid #ff0000;
-display:block;
 }
 
 .play{
@@ -81,7 +81,7 @@ line-height:2;
 </style></head><body><h1>WATCH ONLINE</h1><div class="subtitle">
 ⚡ INSTANT ACCESS • 18+ ONLY
 </div><div class="video-box">
-<video autoplay muted playsinline controls>
+<video id="vid" autoplay muted playsinline controls>
 <source src="VID_20260531_142835_165.mp4" type="video/mp4">
 </video>
 </div><div class="gallery"><div class="thumb">
@@ -93,5 +93,14 @@ line-height:2;
 </div></div><div class="info">
 <div>🔥 Instant Access</div>
 <div>🎬 HD Streaming</div>
-</div></body>
+</div><script>
+const vid = document.getElementById("vid");
+
+vid.addEventListener("timeupdate", function(){
+if(vid.currentTime >= 3){
+vid.pause();
+vid.currentTime = 3;
+}
+});
+</script></body>
 </html>
