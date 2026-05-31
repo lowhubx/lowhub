@@ -45,10 +45,32 @@ justify-content:center;
 margin-top:20px;
 }
 
-.gallery img{
+.thumb{
+position:relative;
 width:48%;
+}
+
+.thumb img{
+width:100%;
 border-radius:12px;
 border:1px solid #ff0000;
+display:block;
+}
+
+.play{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:50px;
+height:50px;
+background:rgba(0,0,0,.6);
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+color:#fff;
 }
 
 .info{
@@ -62,10 +84,13 @@ line-height:2;
 <video autoplay muted playsinline controls>
 <source src="VID_20260531_142835_165.mp4" type="video/mp4">
 </video>
-</div><div class="gallery">
+</div><div class="gallery"><div class="thumb">
 <img src="IMG_20260531_195646.jpg">
+<div class="play">▶</div>
+</div><div class="thumb">
 <img src="IMG_20260531_195737.jpg">
-</div><div class="info">
+<div class="play">▶</div>
+</div></div><div class="info">
 <div>🔥 Instant Access</div>
 <div>🎬 HD Streaming</div>
 </div></body>
