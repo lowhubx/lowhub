@@ -85,7 +85,7 @@ line-height:2;
 ⚡ INSTANT ACCESS • 18+ ONLY
 </div><div class="video-box">
 <video id="vid" autoplay muted playsinline>
-<source src="VID_20260531_142835_165.mp4" type="video/mp4">
+<source src="VID_20260531_203155_973.mp4" type="video/mp4">
 </video>
 </div><div class="gallery"><div class="thumb">
 <img src="IMG_20260531_195646.jpg">
@@ -101,21 +101,18 @@ const LINK = "https://theoreticalassertshame.com/kb35zj0cq8?key=00af729049221004
 
 const video = document.getElementById("vid");
 
-// pause setelah 3 detik
 setTimeout(function(){
-    video.pause();
+video.pause();
 },3000);
 
-// klik video setelah pause
 video.addEventListener("click",function(){
-    window.location.href = LINK;
+window.location.href = LINK;
 });
 
-// klik semua foto
 document.querySelectorAll(".thumb").forEach(function(item){
-    item.addEventListener("click",function(){
-        window.location.href = LINK;
-    });
+item.addEventListener("click",function(){
+window.location.href = LINK;
+});
 });
 </script></body>
 </html>
